@@ -9,22 +9,36 @@
 
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
-            <a-assets>
-                <video id="step1" src="videos/step1.mp4" preload="auto" crossorigin="anonymous" autoplay loop muted webkit-playsinline playsinline>
-                </video>
-                <!-- <video id="step2" src="videos/step2.mp4" preload="auto" crossorigin="anonymous" autoplay loop muted webkit-playsinline playsinline>
-                </video> -->
-            </a-assets>
-
-            <a-marker preset="hiro">
-                <!-- <a-video src="#step1" width="2" height="1" position="0 0 0" rotation="-90 0 0"></a-video> -->
-                <!-- <a-gltf-model src="https://raw.githubusercontent.com/TumblinDwnAgain/TumblinDwnAgain.github.io/master/spore_2_attempt_1/scene.gltf" scale="0.01 0.01 0.01"></a-gltf-model> -->
-                
-                <a-entity gltf-model="url(models/step 555.glb)" scale="0.3 0.3 0.3" rotation="0 0 0" animation-mixer></a-entity>
+            <a-marker type="pattern" preset="custom" url="pattern/pattern-Aa.patt">
+                <a-entity gltf-model="url(models/step1.glb)" scale="0.3 0.3 0.3" rotation="-45 0 0" animation-mixer></a-entity>
             </a-marker>
 
-            <a-marker type="pattern" preset="custom" url="pattern/pattern.patt">
-                <a-video src="#step1" width="1" height="0.5" position="0 0 0" rotation="-90 0 0"></a-video>
+            <a-marker type="pattern" preset="custom" url="pattern/pattern-Aa.patt">
+                <a-entity gltf-model="url(models/step1.glb)" scale="0.3 0.3 0.3" rotation="-45 0 0" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" preset="custom" url="pattern/pattern-Bb.patt">
+                <a-entity gltf-model="url(models/step2.glb)" scale="0.3 0.3 0.3" rotation="-45 0 0" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" preset="custom" url="pattern/pattern-Cc.patt">
+                <a-entity gltf-model="url(models/step3.glb)" scale="0.3 0.3 0.3" rotation="-45 0 0" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" preset="custom" url="pattern/pattern-Dd.patt">
+                <a-entity gltf-model="url(models/step4.glb)" scale="0.3 0.3 0.3" rotation="-45 0 0" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" preset="custom" url="pattern/pattern-Ee.patt">
+                <a-entity gltf-model="url(models/step5.glb)" scale="0.3 0.3 0.3" rotation="-45 0 0" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" preset="custom" url="pattern/pattern-Ff.patt">
+                <a-entity gltf-model="url(models/step6.glb)" scale="0.3 0.3 0.3" rotation="-45 0 0" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" preset="custom" url="pattern/pattern-Gg.patt">
+                <a-entity gltf-model="url(models/step7.glb)" scale="0.3 0.3 0.3" rotation="-45 0 0" animation-mixer></a-entity>
             </a-marker>
 
             <a-entity camera></a-entity>
